@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-12T19:33:41 IST" name="Default suite" finished-at="2021-04-12T19:34:02 IST" duration-ms="21018">
+    <groups>
+    </groups>
+    <test started-at="2021-04-12T19:33:41 IST" name="Default test" finished-at="2021-04-12T19:34:02 IST" duration-ms="21018">
+      <class name="com.Ecommerce.Skillrary.testScripts.LoginDetailsUser">
+        <test-method is-config="true" signature="ConfigBS()[pri:0, instance:com.Ecommerce.Skillrary.testScripts.LoginDetailsUser@2e222612]" started-at="2021-04-12T19:33:40 IST" name="ConfigBS" finished-at="2021-04-12T19:33:41 IST" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBS -->
+        <test-method is-config="true" signature="openApp()[pri:0, instance:com.Ecommerce.Skillrary.testScripts.LoginDetailsUser@2e222612]" started-at="2021-04-12T19:33:41 IST" name="openApp" finished-at="2021-04-12T19:33:50 IST" duration-ms="8523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="userdetails()[pri:0, instance:com.Ecommerce.Skillrary.testScripts.LoginDetailsUser@2e222612]" started-at="2021-04-12T19:33:50 IST" name="userdetails" finished-at="2021-04-12T19:34:02 IST" duration-ms="12351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userdetails -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:com.Ecommerce.Skillrary.testScripts.LoginDetailsUser@2e222612]" started-at="2021-04-12T19:34:02 IST" name="closeApp" finished-at="2021-04-12T19:34:02 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.Ecommerce.Skillrary.testScripts.LoginDetailsUser@2e222612]" started-at="2021-04-12T19:34:02 IST" name="configAS" finished-at="2021-04-12T19:34:02 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.Ecommerce.Skillrary.testScripts.LoginDetailsUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -7,6 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 public class UserPage {
 	public WebDriver driver;
+	
+public WebElement getUserbtn() {
+		return userbtn;
+	}
+
+	public WebElement getProfilebtn() {
+		return profilebtn;
+	}
+
 @FindBy(xpath="//img[@class='user-image']")
 private WebElement userbtn;
 

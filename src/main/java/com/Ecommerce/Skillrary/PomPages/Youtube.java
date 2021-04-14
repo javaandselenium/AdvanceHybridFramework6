@@ -9,6 +9,18 @@ import org.testng.Reporter;
 
 public class Youtube {
 	public WebDriver driver;
+	
+	public WebElement getViews() {
+		return views;
+	}
+
+	public WebElement getClosecookie() {
+		return closecookie;
+	}
+
+	public WebElement getWatchonbtn() {
+		return watchonbtn;
+	}
 	@FindBy(xpath="//yt-formatted-string[text()='Meet Jane...']/ancestor::div[@id='container']//span[@class='view-count style-scope ytd-video-view-count-renderer']")
 	private WebElement views;
 	

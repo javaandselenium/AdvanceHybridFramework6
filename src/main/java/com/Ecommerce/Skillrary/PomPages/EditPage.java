@@ -11,6 +11,10 @@ public class EditPage {
 	@FindBy(xpath="//i[@class='fa fa-edit']")
 	private WebElement editBtn;
 	
+	public WebElement getEditBtn() {
+		return editBtn;
+	}
+
 	public EditPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
 		this.driver=driver;

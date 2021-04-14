@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FacebookLogin {
 	public WebDriver driver;
+	
 	@FindBy(xpath="//button[text()='Like']")
 	private WebElement likeButton;
 

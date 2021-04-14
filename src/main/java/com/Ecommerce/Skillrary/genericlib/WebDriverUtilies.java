@@ -1,5 +1,6 @@
 package com.Ecommerce.Skillrary.genericlib;
 
+import java.io.IOException;
 import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,6 +26,10 @@ public class WebDriverUtilies {
 	public void select(WebElement element,String text) {
 		Select s=new Select(element);
 		s.selectByVisibleText(text);
+	}
+	
+	public void uploadPopup() throws IOException {
+		Runtime.getRuntime().exec("C:\\Users\\QSP\\Desktop\\AutoITdemo\\sr.exe");
 	}
 /**
  * used to take the mouse cursor on the excepted element on the browser

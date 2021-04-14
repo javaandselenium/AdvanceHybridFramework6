@@ -33,7 +33,7 @@ public class UserUpdate extends ExcelUtilies{
 		user.addresstype(fu.getDataPropertyFile("data"),fu.getDataPropertyFile("address"));
 		user.getAddressType().click();
 		
-		Runtime.getRuntime().exec("C:\\Users\\QSP\\Desktop\\AutoITdemo\\sr.exe");
+		utilies.uploadPopup();
 		user.updateElements(fu.getDataPropertyFile("DOB"), fu.getDataPropertyFile("cpwd"));
 	
 	

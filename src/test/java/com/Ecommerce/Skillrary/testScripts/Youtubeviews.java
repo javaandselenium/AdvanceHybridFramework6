@@ -3,6 +3,7 @@ package com.Ecommerce.Skillrary.testScripts;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Ecommerce.Skillrary.PomPages.AboutUs;
@@ -11,7 +12,7 @@ import com.Ecommerce.Skillrary.PomPages.SkillRrayLogin;
 import com.Ecommerce.Skillrary.PomPages.TakeCourse;
 import com.Ecommerce.Skillrary.PomPages.Youtube;
 import com.Ecommerce.Skillrary.genericlib.BaseClass;
-
+@Listeners(com.Ecommerce.Skillrary.genericlib.ListnersDemo.class)
 public class Youtubeviews extends BaseClass{
 	@Test
 	public void views() throws IOException, InterruptedException {

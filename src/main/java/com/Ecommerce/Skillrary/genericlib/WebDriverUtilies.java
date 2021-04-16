@@ -1,9 +1,14 @@
 package com.Ecommerce.Skillrary.genericlib;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -176,6 +181,22 @@ public class WebDriverUtilies {
 				public void verifyScuccessMsg(String actual,String expected) {
 					Assert.assertEquals(actual, expected);
 					
+				}
+				/**
+				 * To take the screenshot
+				 * @param driver
+				 * @throws IOException
+				 */
+				
+				
+				public void takeScreenShot(WebDriver driver,String name) throws IOException {
+					Date d=new Date();
+					String date = d.toString().replaceAll("-",":");
+					
+					TakesScreenshot t=(TakesScreenshot) driver;
+					File src = t.getScreenshotAs(OutputType.FILE);
+					File dest=new File(AutoConstant.photoPath+date+".png");
+					FileUtils.copyFile(src, dest);
 				}
 		
 		

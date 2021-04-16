@@ -18,7 +18,7 @@ public interface AutoConstant {
 	
 	String testDatapath="./testData/";
 	
-	String excelpath="./Userdetails5.xlsx";
+	String excelpath="./Userdata.xlsx";
 	
 	String url="https://skillrary.com/";
 	

@@ -3,6 +3,7 @@ package com.Ecommerce.Skillrary.testScripts;
 import java.io.IOException;
 import java.sql.SQLException;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Ecommerce.Skillrary.PomPages.EditPage;
@@ -13,7 +14,7 @@ import com.Ecommerce.Skillrary.PomPages.UserPage;
 import com.Ecommerce.Skillrary.genericlib.BaseClass;
 import com.Ecommerce.Skillrary.genericlib.ExcelUtilies;
 import com.Ecommerce.Skillrary.genericlib.FileUtilies;
-
+@Listeners(com.Ecommerce.Skillrary.genericlib.ListnersDemo.class)
 public class UserUpdate extends ExcelUtilies{
 	@Test(dataProvider = "readData")
 	public void update(String fn,String ln,String email,String pwd,String contact) throws IOException, SQLException {
@@ -25,11 +26,13 @@ public class UserUpdate extends ExcelUtilies{
 		SkillraryDemoLogincredtailsPage sd=new SkillraryDemoLogincredtailsPage(driver);
 		String query="select * from userlogin";
 		sd.logindetaisls(FileUtilies.queryExecution(query,1,"user"),FileUtilies.queryExecution(query,2,"user"));
-	
-		UserPage u=new UserPage(driver);
-		EditPage e = u.userButton();
-		UserDetailsPage user = e.editButton();
+		
+			UserPage u=new UserPage(driver);
+			EditPage e = u.userButton();
+			UserDetailsPage user = e.editButton();
 		user.userDetails(fn, ln, email, pwd, contact);
+		
+
 		user.addresstype(fu.getDataPropertyFile("data"),fu.getDataPropertyFile("address"));
 		user.getAddressType().click();
 		

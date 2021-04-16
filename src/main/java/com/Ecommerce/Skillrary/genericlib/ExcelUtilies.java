@@ -22,16 +22,16 @@ public class ExcelUtilies extends BaseClass{
 	public Object[][] readData() throws EncryptedDocumentException, IOException{
 		FileInputStream f=new FileInputStream(AutoConstant.excelpath);
 		Workbook wb = WorkbookFactory.create(f);
-		Sheet sh = wb.getSheet("UserDetails");
+		Sheet sh = wb.getSheet("Sheet1");
 		int rowNum = sh.getLastRowNum();
 		System.out.println(rowNum);
 		int cellNum = sh.getRow(1).getLastCellNum();
 		System.out.println(cellNum);
 		
 		Object obj[][]=new Object[rowNum][cellNum];
-		for(int i=1;i<rowNum;i++) {
+		for(int i=0;i<rowNum;i++) {
 			for(int j=0;j<cellNum;j++) {
-				obj[i][j]=sh.getRow(1).getCell(j).getStringCellValue();
+				obj[i][j]=sh.getRow(i+1).getCell(j).getStringCellValue();
 				System.out.println(obj[i][j]);
 			}
 			

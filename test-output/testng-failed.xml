@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Ecommerce.Skillrary.testScripts.UserUpdate">
+      <class name="com.Ecommerce.Skillrary.testScripts.DetailsAboutCourse">
         <methods>
           <include name="configAS"/>
-          <include name="update"/>
           <include name="closeApp"/>
+          <include name="contactusdetailsinfo"/>
           <include name="ConfigBS"/>
           <include name="openApp"/>
         </methods>
-      </class> <!-- com.Ecommerce.Skillrary.testScripts.UserUpdate -->
+      </class> <!-- com.Ecommerce.Skillrary.testScripts.DetailsAboutCourse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

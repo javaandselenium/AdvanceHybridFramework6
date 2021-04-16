@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Ecommerce.Skillrary.PomPages.ContactUsdetails;
@@ -15,7 +16,7 @@ import com.Ecommerce.Skillrary.PomPages.SkillraryDemoLogin;
 import com.Ecommerce.Skillrary.PomPages.Testing;
 import com.Ecommerce.Skillrary.genericlib.BaseClass;
 
-
+@Listeners(com.Ecommerce.Skillrary.genericlib.ListnersDemo.class)
 public class DetailsAboutCourse extends BaseClass {
 	        @Test
 	public void contactusdetailsinfo() throws IOException {
